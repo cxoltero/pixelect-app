@@ -75,15 +75,6 @@ var Router = Backbone.Router.extend({
 
       });
 
-      // $.ajax({
-      //     url: 'https://polar-chamber-4218.herokuapp.com/image_sets',
-      //     type: 'POST',
-      //     data:data
-      //   })
-      //   alert("upload worked")
-
-
-
 
   },
 
@@ -105,7 +96,6 @@ var Router = Backbone.Router.extend({
         var template = Handlebars.compile($('#homeTemplate').html());
       $('#handlebarsContainer').html(template({
         image_sets: response.image_sets
-
       }));
 
         $('#homeButton').on('click', function(){
@@ -114,7 +104,6 @@ var Router = Backbone.Router.extend({
 
 
       });
-
 
   },
 
@@ -133,9 +122,6 @@ var Router = Backbone.Router.extend({
 
       }));
     });
-
-
-
 
   }
 // // ############### END OF BACKBONE ############//
